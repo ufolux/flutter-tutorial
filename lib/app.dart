@@ -24,9 +24,9 @@ class CupertinoStoreHomePage extends StatelessWidget {
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
         items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.home), label: 'Products'),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.search), label: 'Search'),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.shopping_cart), label: 'Cart'),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.home), title: Text('Products')),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.search), title: Text('Search')),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.shopping_cart), title: Text('Cart')),
         ],
       ),
       tabBuilder: (BuildContext context, int index) {
