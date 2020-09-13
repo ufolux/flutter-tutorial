@@ -2,7 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:myApp/Model/app_state_model.dart';
 import 'package:provider/provider.dart';
 
-class ShoppingCartTab extends StatelessWidget {
+class ShoppingCartTab extends StatefulWidget {
+  @override
+  _ShoppingCartTabState createState() {
+    return _ShoppingCartTabState();
+  }
+}
+
+class _ShoppingCartTabState extends State<ShoppingCartTab> {
   @override
   Widget build(BuildContext context) {
     return Consumer<AppStateModel>(
@@ -18,3 +25,4 @@ class ShoppingCartTab extends StatelessWidget {
     );
   }
 }
+
